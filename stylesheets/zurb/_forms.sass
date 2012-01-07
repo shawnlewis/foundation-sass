@@ -1,10 +1,6 @@
-@import includes
-
-// Artfully masterminded by ZURB
-// Make sure to include app.js / foundation.js if you are going to use inline label inputs
-
 // Standard Forms
 //-----------------------------------------
+
 form
   margin: 0 0 18px
   label 
@@ -24,6 +20,8 @@ label + input.input-text, label + textarea, label + select, label + div.dropdown
   margin-top: -9px
   
 // Text input and textarea font and padding
+//-----------------------------------------
+
 input.input-text, textarea
   +font-size(13)
   padding: 4px 3px 2px
@@ -35,11 +33,15 @@ input.input-text, textarea
     outline: none !important
   
 // Inlined Label Style
+//-----------------------------------------
+
 input, textarea
   .placeholder
     color: #888
 
 // Text input and textarea sizes
+//-----------------------------------------
+
 input
   &.input-text
     width: 254px
@@ -54,6 +56,8 @@ input, textarea
     width: 434px
 
 // Fieldsets
+//-----------------------------------------
+
 form
   fieldset
     padding: 9px 9px 2px 9px
@@ -61,12 +65,16 @@ form
     margin: 18px 0
 
 // Inlined Radio & Checkbox
+//-----------------------------------------
+
 .form-field input[type=radio], .form-field input[type=checkbox]
   display: inline
   width: auto
   margin-bottom: 0
 
 // Errors
+//-----------------------------------------
+
 .form-field.error input, input.input-text.red
   border-color: #c00000 
   background-color: rgba(255,0,0,0.15)
@@ -88,6 +96,7 @@ form
 
 // Nicer Forms
 //-----------------------------------------
+
 form.nice
   input.input-text, textarea
     border: solid 1px #bbb
@@ -120,6 +129,7 @@ form.nice
     
 // Custom Forms
 //-------------------------------------------------
+
 form.custom
   span.custom
     display: inline-block
