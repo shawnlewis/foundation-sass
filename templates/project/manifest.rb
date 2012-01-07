@@ -5,13 +5,14 @@ stylesheet 'sass/app.sass', :to => 'app.sass', :media => "screen, projector, pri
 stylesheet 'sass/ie.sass', :to => 'ie.sass', :condition => "IE lt 9"
 
 # Javascrips
-javascript 'javascripts/app.js', :to => 'app.js'
+javascript 'javascripts/jquery.min.js', :to => 'jquery.min.js'
+javascript 'javascripts/modernizr.foundation.js', :to => 'modernizr.foundation.js'
 javascript 'javascripts/forms.jquery.js', :to => 'forms.jquery.js'
 javascript 'javascripts/jquery.customforms.js', :to => 'jquery.customforms.js'
-javascript 'javascripts/jquery.min.js', :to => 'jquery.min.js'
 javascript 'javascripts/jquery.reveal.js', :to => 'jquery.reveal.js'
 javascript 'javascripts/jquery.orbit-1.3.0.js', :to => 'jquery.orbit-1.3.0.js'
 javascript 'javascripts/jquery.placeholder.min.js', :to => 'jquery.placeholder.min.js'
+javascript 'javascripts/app.js', :to => 'app.js'
 
 # Make sure you list all the project template files here in the manifest.
 html 'index.html'

@@ -89,7 +89,7 @@
 @media only screen and (max-width: 767px)
   .block-grid.mobile
     margin-left: 0%
-    li
+    &>li
       float: none
       width: 100%
       margin-left: 0%
@@ -124,7 +124,25 @@
     display: block !important
   .show-on-desktops
     display: none !important
-    
+
+// Modernizr-enabled tablet targeting
+//-------------------------------------------------
+
+@media only screen and (max-width: 1280px) and (min-width: 768px)
+  .touch
+    .hide-on-phones
+      display: block !important
+  	.hide-on-tablets
+  	  display: none !important
+  	.hide-on-desktops
+  	  display: block !important
+  	.show-on-phones
+  	  display: none !important
+  	.show-on-tablets
+  	  display: block !important
+  	.show-on-desktops
+  	  display: none !important
+  
 @media only screen and (max-width: 767px)
   .hide-on-phones
     display: none !important

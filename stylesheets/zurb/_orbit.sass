@@ -44,6 +44,12 @@ div.orbit
     left: 0
     line-height: 0
     display: none
+  &>div
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
 
 // Orbit timer
 //----------------------------------------------------------------------------------------------------
@@ -172,3 +178,44 @@ div.slider-nav
       &.has-thumb
         background-position: 0 0
         border-top: solid 2px $black
+
+// Fluid Layout
+//-------------------------------------------------------------------------------------
+
+.orbit .fluid-placeholder
+  visibility: hidden
+  position: static
+  display: block
+  width: 100%
+.orbit, .orbit-wrapper
+  width: 100% !important
+
+.orbit-bullets
+  position: absolute
+  z-index: 1000
+  list-style: none
+  bottom: -50px
+  left: 50%
+  margin-left: -50px
+  padding: 0
+  li
+    float: left
+    margin-left: 5px
+    cursor: pointer
+    color: #999
+    text-indent: -9999px
+    background: image-url('orbit/bullets.jpg') no-repeat 4px 0
+    width: 13px
+    height: 12px
+    overflow: hidden
+    &.has-thumb
+      background: none
+      width: 100px
+      height: 75px
+    &.active
+      color: #222
+      background-position: -8px 0
+      &.has-thumb
+        background-position: 0 0
+        border-top: 2px solid #000
+  
