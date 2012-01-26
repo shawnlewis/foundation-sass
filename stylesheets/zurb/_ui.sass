@@ -308,7 +308,7 @@ div.panel
     line-height: 45px
     .flyout
       display: none
-    &>a
+    &>a.main
       position: relative
       +font-size(15)
       padding: 0 20px
@@ -324,13 +324,13 @@ div.panel
     &:hover
       .flyout
         display: block
-      &>a
+      &>a.main
         color: #141414
         z-index: 2
         &:after
           border-top-color: #141414
     &.has-flyout
-      &>a
+      &>a.main
         padding-right: 36px
         &:after
           content: ""
@@ -343,6 +343,8 @@ div.panel
           position: absolute
           right: 18px
           bottom: 20px
+      &>a.flyout-toggle
+        display: none
           
 .flyout
   background: #fff
