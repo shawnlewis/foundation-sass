@@ -65,13 +65,13 @@
 // Reveal mobile
 //----------------------------------------------------------------------------------------------------
 
-@media only screen and (device-width: 768px), (device-width: 800)
+@media handheld, only screen and (max-width: 1023px)
   .reveal-modal-bg
     position: absolute
   .reveal-modal
     &.small, &.medium, &.large, &.xlarge
       width: 60%
-      top: 30%
+      top: 60px
       left: 15%
       margin-left: 0
       padding: 5%
@@ -82,7 +82,7 @@
   .reveal-modal
     &.small, &.medium, &.large, &.xlarge
       width: 80%
-      top: 15%
+      top: 15px
       left: 5%
       margin-left: 0
       padding: 5%
