@@ -3,6 +3,7 @@ description 'ZURB-foundation Compass Gem'
 # Sass Files
 stylesheet 'sass/app.sass', :to => 'app.sass', :media => "screen, projector, print"
 stylesheet 'sass/ie.sass', :to => 'ie.sass', :condition => "IE lt 9"
+stylesheet 'sass/_settings.sass', :to => '_settings.sass'
 
 # Javascripts
 javascript 'javascripts/jquery.min.js', :to => 'jquery.min.js'
