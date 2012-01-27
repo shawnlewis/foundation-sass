@@ -1,3 +1,4 @@
+$(document).ready(function () {
 /* TOOLTIPS ---------- */
   /* Positiong and options for adding tooltips */
 
@@ -52,7 +53,7 @@
       if ($(window).width() < 767) {
         var row = target.parents('.row');
         tip.width(row.outerWidth() - 20).css('left', row.offset().left);
-        nubPos(nub, -nubHeight, 'auto', 'auto', (target.offset().left + 10));
+        nubPos(nub, -nubHeight, 'auto', 'auto', target.offset().left);
       } else {
         if (classes.indexOf('top') > -1) {
           tip.css('top', target.offset().top - tip.outerHeight());
@@ -97,3 +98,4 @@
     }
   }
   foundationTooltipsInit();
+});
